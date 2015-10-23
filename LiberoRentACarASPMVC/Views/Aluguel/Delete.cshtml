@@ -1,0 +1,61 @@
+﻿@model LiberoRentACarASPMVC.ViewModels.ReservaAluguelViewModel
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Aluguel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Carro.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carro.Placa)
+        </dd>
+
+      
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAluguel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAluguel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDevolucao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDevolucao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KmInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KmInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KmFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KmFinal)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

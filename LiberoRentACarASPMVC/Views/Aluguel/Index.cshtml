@@ -1,0 +1,62 @@
+﻿@model IEnumerable<LiberoRentACarASPMVC.ViewModels.ReservaAluguelViewModel>
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Carro.Placa)
+        </th>
+      
+        <th>
+            @Html.DisplayNameFor(model => model.DataAluguel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataDevolucao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KmInicial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KmFinal)
+        </th>
+        <td>
+            @Html.DisplayNameFor(model => model.Finalizado)
+        </td>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Carro.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataAluguel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataDevolucao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KmInicial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KmFinal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Finalizado)
+        </td>
+        <td>
+           
+            @Html.ActionLink("Edit", "Edit", new { id=item.AluguelID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AluguelID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AluguelID })
+            @Html.ActionLink("Devolução", "Devolucao", new { id = item.AluguelID }, new { @class = "btn btn-success" })      
+         </td>
+    </tr>
+}
+
+</table>

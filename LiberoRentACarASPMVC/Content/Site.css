@@ -1,0 +1,315 @@
+﻿body {
+    height: 100%;
+    color:#fff;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.aaa{
+	position: absolute;
+	right: 50px;
+}
+
+#wrapper {
+    width:100%; /*set to desired width*/
+    height:100%;
+    margin:auto;
+    position:relative;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+
+}
+
+#divzor {
+	padding: 10px;
+}
+
+#reserva-alu{
+	background: url(/img/reservaBackground.png) repeat;
+	top: 110px;
+	left:186px;
+	overflow: hidden;
+	width: 628px;
+	height: 150px;
+	margin: -10px auto 0px auto;	
+	position: relative;	
+}
+
+#menu-wrapper {
+	background: url(/img/menu-wrapper-bg.png) repeat;
+	position: relative;
+	top: 50px;
+	width: 1010px;
+	height: 110px;
+	margin: -5px auto 0px auto;	
+}
+
+menu {
+	overflow: hidden;
+	height: 110px;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 37px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-shadow: 1px 2px 1px #111719;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/** LOGO */
+
+#logo {
+	width: 290px;
+	height: 110px;
+	margin: 0px auto;
+	padding: 5px 0px 0px 0px;
+}
+
+#logo h1, #logo p {
+	display: block;
+	position: relative;
+	margin: 0px;
+	letter-spacing: -2px;
+	line-height: normal;
+	text-align: center;
+	text-shadow: 1px 2px 2px #0D0E0E;
+	font-weight: 900;
+}
+
+#logo h1 a {
+	text-decoration: none;
+	font-size: 41px;
+	color: #FFFFFF;
+	letter-spacing: -3px;
+}
+
+#logo h1 span {
+	font-weight: 400;
+}
+
+#logo p {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	color: #9FA2A3;
+}
+
+/** BANNER */
+
+#banner {
+	position: relative;
+	bottom: 87px;
+	width: 1000px;
+	height: 259px;
+	margin: 0px auto;
+	background: url(/img/banner.jpg) no-repeat left top;
+}
+
+#banner .image, #banner .caption1, #banner .caption2, #banner .border {
+	position: absolute;
+}
+
+#banner .image {
+	width: 720px;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+#header {
+	padding-top: 40px;
+}
+#content {
+    height:100%;
+    width:100%;
+}
+
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+
+.bodyreserve{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: 1100px;
+	height: 130px;
+	background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+
+
+
+
+
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(60% - 35px);
+	left: calc(46% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+
+
+
+.login{
+	color:#000;
+	position: absolute;
+	top: calc(57% - 75px);
+	left: calc(43% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 35px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+
+.login input[type=button]{
+	width: 60px;
+	height: 35px;
+	position: absolute;	
+	bottom: 55px;
+	left: 344px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}

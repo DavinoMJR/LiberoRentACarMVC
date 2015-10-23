@@ -1,0 +1,9 @@
+﻿@model DateTime?
+@{
+    //System.Globalization.DateTimeFormatInfo dtfi = System.Globalization.CultureInfo.CreateSpecificCulture("pt-BR").DateTimeFormat;
+    DateTime date = Convert.ToDateTime(DateTime.UtcNow.ToString(DateTime.Now.ToShortDateString(), System.Globalization.CultureInfo.InvariantCulture));
+    
+@Html.TextBox("", date, date.ToShortDateString(),
+  new { @class = "datefield", type = "date" })
+    
+}

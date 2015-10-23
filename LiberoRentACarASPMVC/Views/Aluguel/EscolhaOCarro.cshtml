@@ -1,0 +1,95 @@
+﻿@model LiberoRentACarASPMVC.ViewModels.ReservaAluguelViewModel
+
+@section Scripts{
+    <script src="@Url.Content("~/Scripts/btnCarro.js")" type="text/javascript"></script>
+}
+
+<h2>Escolha o carro</h2>
+@using (Html.BeginForm("Reservar", "Aluguel", FormMethod.Get, new { dataAluguel = Model.DataAluguel, dataDevolucao = Model.DataDevolucao, carroID = Model.CarroID }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.CarrosDisponiveis)
+    @Html.HiddenFor(model => model.CarroID);
+    @Html.HiddenFor(model => model.DataAluguel);
+    @Html.HiddenFor(model => model.DataDevolucao);
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.ModeloCarro.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Placa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Ano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Quilometragem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Cor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Direcao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Alugado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.ArCondicionado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.FreioABS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carro.Capacidade)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.CarrosDisponiveis)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModeloCarro.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Placa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ano)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quilometragem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Direcao)
+                </td>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Alugado)
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ArCondicionado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FreioABS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Capacidade)
+                </td>
+
+               
+                 <td>
+                     <input type="submit" class="btn btn-success" value="Escolha" attr-id="@item.CarroID" />
+                </td>
+                
+            </tr>
+        }
+
+    </table>
+}

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiberoRentACarASPMVC", "LiberoRentACarASPMVC\LiberoRentACarASPMVC.csproj", "{3C08EE93-F445-4BB1-B0B2-3DCD66E6EF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiberoRentACar.Model.Services", "LiberoRentACar.Model.Services\LiberoRentACar.Model.Services.csproj", "{7835FBCC-1B0C-4A3E-9E8B-69BE7F0E58D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteLiberoLocadora", "..\BACKUP LOCADORA IMPORTANTE\LiberoRentACar\TesteLiberoLocadora\TesteLiberoLocadora.csproj", "{1B15F7BF-DDD2-4398-9574-2CF35970F0A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{02DA7085-5C66-4CF0-A420-6CD422B2CB1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiberoRentACarPersistence", "LiberoRentACarPersistence\LiberoRentACarPersistence.csproj", "{486E659E-FC18-45B4-8A32-A62066BEE531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiberoRentACarModel", "LiberoRentACarModel\LiberoRentACarModel.csproj", "{2647E47B-7227-46A1-B029-8E8A9B4B5EAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C08EE93-F445-4BB1-B0B2-3DCD66E6EF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C08EE93-F445-4BB1-B0B2-3DCD66E6EF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C08EE93-F445-4BB1-B0B2-3DCD66E6EF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C08EE93-F445-4BB1-B0B2-3DCD66E6EF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7835FBCC-1B0C-4A3E-9E8B-69BE7F0E58D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7835FBCC-1B0C-4A3E-9E8B-69BE7F0E58D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7835FBCC-1B0C-4A3E-9E8B-69BE7F0E58D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7835FBCC-1B0C-4A3E-9E8B-69BE7F0E58D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B15F7BF-DDD2-4398-9574-2CF35970F0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B15F7BF-DDD2-4398-9574-2CF35970F0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B15F7BF-DDD2-4398-9574-2CF35970F0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B15F7BF-DDD2-4398-9574-2CF35970F0A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DA7085-5C66-4CF0-A420-6CD422B2CB1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DA7085-5C66-4CF0-A420-6CD422B2CB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DA7085-5C66-4CF0-A420-6CD422B2CB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DA7085-5C66-4CF0-A420-6CD422B2CB1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486E659E-FC18-45B4-8A32-A62066BEE531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486E659E-FC18-45B4-8A32-A62066BEE531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486E659E-FC18-45B4-8A32-A62066BEE531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486E659E-FC18-45B4-8A32-A62066BEE531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2647E47B-7227-46A1-B029-8E8A9B4B5EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2647E47B-7227-46A1-B029-8E8A9B4B5EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2647E47B-7227-46A1-B029-8E8A9B4B5EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2647E47B-7227-46A1-B029-8E8A9B4B5EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿@model LiberoRentACarASPMVC.ViewModels.ReservaAluguelViewModel
+
+    <div id="reserva-alu">
+    @using (Html.BeginForm("ReservaData","Aluguel",FormMethod.Post))
+    {
+        
+        Html.EnableClientValidation(true);
+        @Html.AntiForgeryToken()
+
+    <div class="body"></div>
+    <div class="grad"></div>        
+    <div class="header">
+        <div>Alugue<span>JÁ</span></div>
+    </div>
+    <br>
+        <div class="login">       
+            @Html.LabelFor(model => model.DataAluguel)
+            @Html.EditorFor(model => model.DataAluguel) 
+            @Html.ValidationMessageFor(model => model.DataAluguel, "", new { @class = "text-danger" })
+            <div style="float: right;">
+                @Html.DropDownListFor(model => model.SelectedHoraAluguel, Model.SelecaoHoraAluguel)
+            </div>
+                                  
+            @Html.LabelFor(model=>model.DataDevolucao)
+            @Html.EditorFor(model => model.DataDevolucao)
+            @Html.ValidationMessageFor(model => model.DataDevolucao, "", new { @class = "text-danger" })
+            <div style="float: right;">
+                @Html.DropDownListFor(model => model.SelectedHoraDevolucao, Model.SelecaoHoraDevolucao)
+            </div>
+
+            <input type="submit" value="GO" class="btn btn-primary" style="position: absolute;left: 360px; bottom: 60px;">
+       </div>
+    }
+
+</div>
+    
+

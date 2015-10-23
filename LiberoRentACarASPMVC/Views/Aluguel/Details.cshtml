@@ -1,0 +1,57 @@
+﻿@model LiberoRentACarASPMVC.ViewModels.ReservaAluguelViewModel
+
+
+<h2>Details</h2>
+
+<div>
+    <h4>Aluguel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Carro.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carro.Placa)
+        </dd>
+
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAluguel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAluguel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDevolucao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDevolucao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KmInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KmInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KmFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KmFinal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AluguelID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
